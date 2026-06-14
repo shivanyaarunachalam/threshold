@@ -21,7 +21,12 @@ app.use(cors({
 app.use(express.json({ limit: '2mb' }))
 app.use('/api', routes)
 app.get('/health', (_req, res) => res.json({ status: 'ok', ts: new Date().toISOString() }))
-
+app.get('/healthz', (_req, res) =>
+  res.status(200).json({
+    status: 'ok',
+    ts: new Date().toISOString()
+  })
+)
 const server = app.listen(PORT, () => {
   console.log(`Threshold backend running on http://localhost:${PORT}`)
   if (!process.env.ANTHROPIC_API_KEY) {
