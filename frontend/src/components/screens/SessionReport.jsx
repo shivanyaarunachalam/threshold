@@ -132,7 +132,7 @@ export function SessionReport({ onClose }) {
           </p>
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-xl font-bold text-white leading-tight">
-              Final Decision: <span className="text-green-200">{finalDecision}</span>
+              Final Decision: <span className="text-green-100">{finalDecision}</span>
             </h2>
             <span className="text-xs text-gray-600 font-mono shrink-0">{lastEntry?.timestamp}</span>
           </div>
