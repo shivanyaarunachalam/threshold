@@ -123,7 +123,7 @@ export function SessionReport({ onClose }) {
       </div>
 
       {/* Body */}
-      <div className="max-w-3xl mx-auto px-6 py-10">
+      <div className="max-w-2xl mx-auto px-6 py-10">
 
         {/* Title */}
         <div className="mb-10">
@@ -132,7 +132,7 @@ export function SessionReport({ onClose }) {
           </p>
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-xl font-bold text-white leading-tight">
-              Final Decision: <span className="text-green-400">{finalDecision}</span>
+              Final Decision: <span className="text-green-200">{finalDecision}</span>
             </h2>
             <span className="text-xs text-gray-600 font-mono shrink-0">{lastEntry?.timestamp}</span>
           </div>
